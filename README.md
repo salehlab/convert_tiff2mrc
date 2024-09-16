@@ -1,47 +1,62 @@
-TIFF to MRC Conversion Script
 
-This Python script converts .tif or .tiff image files (such as those used in electron microscopy) to the MRC format. 
-The script processes individual files or batches of TIFF files in a directory.
+# TIFF to MRC Conversion Script
 
-Features
-•	Converts both .tif and .tiff files to .mrc.
-•	Supports batch processing using wildcard patterns (e.g., *.tif or *.tiff).
-•	Confirms the number of files to be converted before proceeding.
-•	Automatically checks if required Python modules are installed and provides instructions if they're missing.
+Welcome to the **TIFF to MRC Conversion Script**! 
+This Python tool is designed to easily convert `.tif` or `.tiff` image files (like those used in electron microscopy) into the MRC format. 
+You can use it to process single files or batch-convert multiple files in a directory.
 
-Requirements
-Ensure you have the following Python modules installed:
-•	tifffile
-•	mrcfile
-•	numpy
+## Features
+- Converts both `.tif` and `.tiff` files to `.mrc`.
+- Supports batch conversion using wildcard patterns (e.g., `*.tif` or `*.tiff`).
+- Confirms the number of files to be converted before starting.
+- Automatically checks for required Python modules and provides installation instructions if needed.
 
-If not run:
+## Requirements
+Make sure you have the following Python packages installed:
+- `tifffile`
+- `mrcfile`
+- `numpy`
+
+If you don't have them, simply install via pip:
+
+```bash
 pip install tifffile mrcfile numpy
+```
 
-How to use convert_tiff2mrc.py tool:
+## How to Use
 
-1. Clone the repository:
-  git clone https://github.com/yourusername/convert_tiff2mrc.git
-  cd convert_tiff2mrc
+1. Clone this repository:
 
-2. Make the script executable using:
-   chmod +x convert_tiff2mrc.py
+    ```bash
+    git clone https://github.com/yourusername/convert_tiff2mrc.git
+    cd convert_tiff2mrc
+    ```
 
-4. Place the script convert_tiff2mrc.py in the directory where the .tif or .tiff files are located or vice-vera.
+2. Make the script executable:
 
+    ```bash
+    chmod +x convert_tiff2mrc.py
+    ```
 
-5. Run the script:
-  python convert_tiff2mrc.py
+3. Place the script (`convert_tiff2mrc.py`) in the same directory as your `.tif` or `.tiff` files.
 
----- Extra ----
-Customizing the Directory or File Patterns:
-By default, the script processes all .tif and .tiff files in the current directory. You can modify the script to point to a different directory or use custom wildcard patterns.
-For example, to convert .tif files in a different directory:
-  batch_convert_tiff_to_mrc("/path/to/your/directory/*.tif")
+4. Run the script:
 
+    ```bash
+    python convert_tiff2mrc.py
+    ```
 
-Contributing
-Feel free to submit pull requests or open issues if you find bugs or have suggestions for improvements!
+## Customizing the Script
+By default, the script converts all `.tif` and `.tiff` files in the current directory. You can point to a different directory or use custom patterns if needed.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+For example, to convert files in a specific directory:
+
+```python
+batch_convert_tiff_to_mrc("/path/to/your/directory/*.tif")
+```
+
+## Contributing
+We welcome contributions! Feel free to submit pull requests or open an issue if you find bugs or have suggestions.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
