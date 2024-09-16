@@ -21,7 +21,7 @@ pip install tifffile mrcfile numpy
 How to use convert_tiff2mrc.py tool:
 
 1. Clone the repository:
-  git clone https://github.com/<yourusername>/convert_tiff2mrc.git
+  git clone https://github.com/yourusername/convert_tiff2mrc.git
   cd convert_tiff2mrc
 
 2. Make the script executable using:
