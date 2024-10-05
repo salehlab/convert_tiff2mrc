@@ -52,7 +52,7 @@ By default, the script converts all `.tif` and `.tiff` files in the current dire
 For example, to convert files in a specific directory:
 
 ```python
-batch_convert_tiff_to_mrc("/path/to/your/directory/*.tif")
+batch_convert_tiff_to_mrc "/path/to/your/directory/*.tif"
 ```
 
 ## Contributing
