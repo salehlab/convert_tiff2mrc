@@ -28,7 +28,7 @@ pip install tifffile mrcfile numpy
 1. Clone this repository:
 
     ```bash
-    git clone https://github.com/yourusername/convert_tiff2mrc.git
+    git clone https://github.com/salehlab/convert_tiff2mrc.git
     cd convert_tiff2mrc
     ```
 
